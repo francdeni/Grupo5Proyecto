@@ -4,9 +4,9 @@ from AppGrupo5 import views
 
 urlpatterns = [
     
-    path('instrumentos',views.instrumentos),
-    path('pedal', views.pedal),
-    path('disco',views.disco),
+    path('instrumentos',views.instrumentos, name="instrumentos"),
+    path('pedal', views.pedal, name= "pedal"),
+    path('disco',views.disco, name= "disco"),
     path('', views.inicio, name="inicio"),
 ]
 
